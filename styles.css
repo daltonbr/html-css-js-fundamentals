@@ -45,3 +45,11 @@ nav ul li a:visited {
   font-weight: 600;
   font-size: 1.25em;
 }
+
+h1 {
+  color: var(--primary-brand-color);
+}
+
+article {
+  padding: 2em;
+}
