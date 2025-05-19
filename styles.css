@@ -1,0 +1,12 @@
+:root {
+    --primary-brand-color: #a1603b;
+    --color-brand-contrast: #fff;
+    --color-medium-gray: #898989;
+    --color-light-gray: #ccc;
+    --color-background: #e5e5e5;
+    --font-body: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--primary-brand-color);
+}
