@@ -53,3 +53,25 @@ h1 {
 article {
   padding: 2em;
 }
+
+#calculator {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  border: solid 1px var(--color-medium-gray);
+  border-radius: 1em;
+  padding: 1.5em;
+  width: 90%;
+  max-width: 325px;
+  background-color: var(--color-brand-contrast);
+  margin-top: 2em;
+}
+
+#calculator h2 {
+  margin: .5em 0 .5em 0;
+}
+
+#calculator input {
+  padding: 5px;
+  border-radius: 3px;
+  border: solid 1px var(--color-medium-gray);
+  width: 150px;
+}
