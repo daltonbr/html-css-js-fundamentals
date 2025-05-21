@@ -23,3 +23,32 @@ function sum() {
 
     return total;
 }
+
+function calculate(box) {
+    let quantity = 0;
+
+    if (box.value.length > 0) {
+        quantity = parseInt(box.value);
+    }
+
+    inventory[box.id].quantity = quantity;
+
+    const total = sum();
+    return `${total}.00`;
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+
+    const totalContainer = document.getElementById('total-container');
+    const inputBoxes = document.querySelectorAll('#calculator input');
+
+    inputBoxes.forEach(box => {
+        box.addEventListener('change', () => {
+            totalContainer.textContent = calculate(box);
+        });
+
+        box.addEventListener('keyup', () => {
+            totalContainer.textContent = calculate(box);
+        });
+    });
+});
